@@ -3,3 +3,5 @@ uvicorn
 python-dotenv
 pymongo
 requests
+email-validator
+pydantic[email]
