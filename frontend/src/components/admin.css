@@ -1,0 +1,100 @@
+/* ===============================
+   GLOBAL SHARP RESET
+================================ */
+* {
+  box-sizing: border-box;
+  border-radius: 0 !important; /* 🔪 no curves anywhere */
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f4f6fb;
+  color: #0f172a;
+}
+
+/* ===============================
+   LOGIN BOX
+================================ */
+.login-box {
+  width: 360px;
+  margin: 120px auto;
+  padding: 32px;
+  background: #ffffff;
+  border: 2px solid #0f172a;
+}
+
+/* ===============================
+   TITLE
+================================ */
+.login-box h2 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #0f172a;
+  padding-bottom: 8px;
+}
+
+/* ===============================
+   INPUTS
+================================ */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  border: 1.8px solid #0f172a;
+  background: #ffffff;
+  color: #0f172a;
+  outline: none;
+  font-weight: 500;
+}
+
+.login-box input:focus {
+  border-color: #2563eb;
+  background: #f8fafc;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+.login-box button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  background: #0f172a;
+  color: #ffffff;
+  border: 2px solid #0f172a;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.login-box button:hover {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+/* ===============================
+   ERROR MESSAGE
+================================ */
+.login-box p {
+  margin-top: 16px;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1.5px solid #b91c1c;
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* ===============================
+   MOBILE
+================================ */
+@media (max-width: 480px) {
+  .login-box {
+    width: calc(100% - 24px);
+    margin: 60px auto;
+    padding: 24px;
+  }
+}

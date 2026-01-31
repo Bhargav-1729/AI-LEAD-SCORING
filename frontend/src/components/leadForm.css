@@ -1,0 +1,126 @@
+/* ===============================
+   GLOBAL RESET (SHARP ONLY)
+================================ */
+* {
+  box-sizing: border-box;
+  border-radius: 0 !important; /* 🔪 zero rounding */
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f4f6fb;
+  color: #0f172a;
+}
+
+/* ===============================
+   FORM CONTAINER
+================================ */
+.lead-form-container {
+  max-width: 600px;
+  margin: 48px auto;
+  padding: 32px;
+  background: #ffffff;
+  border: 2px solid #0f172a;
+}
+
+/* ===============================
+   HEADINGS
+================================ */
+.lead-form-container h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.lead-form-container p {
+  font-size: 15px;
+  margin-bottom: 24px;
+  color: #334155;
+}
+
+/* ===============================
+   FORM ELEMENTS
+================================ */
+.lead-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1.8px solid #0f172a;
+  background: #ffffff;
+  color: #0f172a;
+  outline: none;
+  font-weight: 500;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+/* ===============================
+   FOCUS STATE
+================================ */
+input:focus,
+select:focus,
+textarea:focus {
+  background: #f8fafc;
+  border-color: #2563eb;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+button {
+  margin-top: 12px;
+  padding: 14px;
+  background: #0f172a;
+  color: #ffffff;
+  border: 2px solid #0f172a;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+button:hover {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ===============================
+   MESSAGE STATES
+================================ */
+.lead-form-container p:last-child {
+  margin-top: 18px;
+  padding: 12px;
+  font-weight: 600;
+  border: 1.5px solid #0f172a;
+  background: #f8fafc;
+}
+
+/* ===============================
+   MOBILE
+================================ */
+@media (max-width: 640px) {
+  .lead-form-container {
+    margin: 24px 12px;
+    padding: 24px;
+  }
+
+  .lead-form-container h1 {
+    font-size: 22px;
+  }
+}

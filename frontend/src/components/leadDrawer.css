@@ -1,0 +1,163 @@
+/* Overlay */
+.drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1000;
+}
+
+/* Drawer panel */
+.drawer {
+  width: 420px;
+  max-width: 100%;
+  height: 100%;
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.15);
+  animation: slideIn 0.25s ease-out;
+  overflow-y: auto;
+}
+
+/* Slide animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Header */
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.drawer-header h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.drawer-header button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Sections */
+.drawer-section {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #333;
+}
+
+.drawer-section strong {
+  display: inline-block;
+  min-width: 90px;
+}
+
+/* Intent badges */
+.intent-high {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.intent-medium {
+  color: #ca8a04;
+  font-weight: 600;
+}
+
+.intent-low {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* AI reasons */
+.drawer-section ul {
+  margin: 8px 0 0 16px;
+  padding: 0;
+}
+
+.drawer-section li {
+  margin-bottom: 6px;
+}
+
+/* Notes */
+.notes {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+.notes li {
+  background: #f8fafc;
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.notes small {
+  color: #6b7280;
+  display: block;
+  margin-top: 4px;
+}
+
+/* Footer */
+.drawer-footer {
+  position: sticky;
+  bottom: 0;
+  background: #ffffff;
+  padding-top: 12px;
+  margin-top: 16px;
+  border-top: 1px solid #eee;
+  display: flex;
+  gap: 10px;
+}
+
+.drawer-footer button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.drawer-footer button:hover {
+  background: #1e40af;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .drawer {
+    width: 100%;
+  }
+}
+
+.ai-followup {
+  margin-top: 10px;
+  background: #f9fafb;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.ai-followup pre {
+  white-space: pre-wrap;
+  background: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
