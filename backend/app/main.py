@@ -9,16 +9,11 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-        "https://ai-lead-scoring-gamma.vercel.app"
-    ],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=["*"],        # ✅ allow all origins
+    allow_methods=["*"],        # ✅ allow all HTTP methods
+    allow_headers=["*"],        # ✅ allow all headers
+    allow_credentials=False,    # 🚨 MUST be False with "*"
 )
-
 
 app.include_router(auth_router)
 app.include_router(lead_router)
