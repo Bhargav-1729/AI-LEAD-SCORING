@@ -7,3 +7,4 @@ email-validator
 pydantic[email]
 groq
 python-jose[cryptography]
+passlib[bcrypt]
